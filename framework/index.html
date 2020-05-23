@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <title></title>
 
@@ -8,8 +8,16 @@
 
     <script src="Scripts/jquery-3.5.1.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
+
+    <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psDashboards/psDashboardModule.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+
+    <script src="app/appModule.js"></script>
+
 </head>
-<body>
+<body class="container-fluid">
+    <ps-framework></ps-framework>
 
 </body>
 </html>
