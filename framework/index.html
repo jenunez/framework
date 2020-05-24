@@ -19,21 +19,22 @@
     <script src="Scripts/angular.min.js"></script>
 
     <!--PROJECT-->
-        <!--Menu-->
-        <script src="ext-modules/psMenu/psMenuModule.js"></script>
-        <script src="ext-modules/psMenu/psMenuController.js"></script>
-        <script src="ext-modules/psMenu/psMenuDirective.js"></script>
-        <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+    <!--Menu-->
+    <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psMenu/psMenuController.js"></script>
+    <script src="ext-modules/psMenu/psMenuDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
 
-        <!--Dashboards-->
-        <script src="ext-modules/psDashboards/psDashboardModule.js"></script>
+    <!--Dashboards-->
+    <script src="ext-modules/psDashboards/psDashboardModule.js"></script>
 
-        <!--Framework-->
-        <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
-        <script src="ext-modules/psFramework/psFrameworkController.js"></script>
-        <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+    <!--Framework-->
+    <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkController.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
     <!--APP-->
     <script src="app/appModule.js"></script>
+    <!--<script src="app/appConfig.js"></script>-->
 
 </head>
 <body class="container-fluid">
@@ -42,9 +43,9 @@
                   icon-file="images/kayak-icon-flat.png">
 
         <ps-menu>
-            <ps-menu-item label="Dashboards" icon="fa-dashboard"></ps-menu-item>
-            <ps-menu-item label="Locations" icon="fa-location-arrow"></ps-menu-item>
-            <ps-menu-item label="Raft Guides" icon="fa-user"></ps-menu-item>
+            <ps-menu-item label="Dashboards" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+            <ps-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ps-menu-item>
+            <ps-menu-item label="Raft Guides" icon="fa-user" route="guides"></ps-menu-item>
         </ps-menu>
 
     </ps-framework>

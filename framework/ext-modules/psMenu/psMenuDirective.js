@@ -5,7 +5,7 @@ angular.module('psMenu').directive('psMenu', function () {
         transclude: true,
         templateUrl: 'ext-modules/psMenu/psMenuTemplate.html',
         controller: 'psMenuController',
-        linl: function (scpoe, el, attr) {
+        link: function (scpoe, el, attr) {
 
         }
     };
