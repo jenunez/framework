@@ -4,8 +4,12 @@
     color: #ccc;
     padding-left: 0;
     width: 200px;
-    min-height: 100vh; // vh stands for vertical height
+    min-height: 100vh; /*vh stands for vertical height*/
     padding-top: 30px;
+}
+
+.ps-menu-area ul {
+    padding-left: 0;
 }
 
 .ps-menu-area .btn:hover {
@@ -28,8 +32,18 @@
     cursor: pointer;
 }
 
-.selectable-item {
+.ps-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.ps-selectable-item:hover {
     background-color: #555;
+}
+
+.ps-menu-icon {
+    margin-right: 10px;
 }
 
 .ps-noselect {
@@ -39,3 +53,5 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+
