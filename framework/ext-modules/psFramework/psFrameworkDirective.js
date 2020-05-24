@@ -2,7 +2,7 @@
 
 angular.module("psFramework").directive("psFramework", function () {
     return {
-        transclude: false,
+        transclude: true,
         scope: { //isolate scope
             title: '@', // bind string one time string value
             subtitle: '@',
