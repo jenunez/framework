@@ -10,6 +10,11 @@ angular.module('psMenu').directive('psMenuItem', function () {
         },
         templateUrl: 'ext-modules/psMenu/psMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
+
+            scope.isActive = function () {
+                return el === ctrl.getActiveElement();
+            }
+
             el.on('click', function (evt) {
                 evt.stopPropagation(); // this lines will give us 
                 evt.preventDefault();  // exclusive access to this click event, it wont be propagated and default action will occur
